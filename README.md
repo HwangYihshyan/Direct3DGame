@@ -1,6 +1,6 @@
 # BulletDraft
 
-C++ / DirectX で制作したゲーム作品です（TH_GP11_GP11B114_25 黄翊銜）。
+C++ / DirectX で制作したゲーム作品です（作者：Hwang Yie shyan）。
 
 ## フォルダ構成
 
@@ -15,3 +15,9 @@ C++ / DirectX で制作したゲーム作品です（TH_GP11_GP11B114_25 黄翊�
 `Game/BulletDraft.exe` を実行してください（Windows）。
 
 ![プレイ画面](プレイ画面1.png)
+
+## ライセンス
+
+`Source/` 以下のソースコードは [MIT License](LICENSE) で公開しています。
+
+`Game/Assets/` 以下の画像・音声素材（提供素材を含む）、プレイ動画、スクリーンショット、作品説明書は MIT License の対象外です。これらの権利はそれぞれの権利者に帰属します。
