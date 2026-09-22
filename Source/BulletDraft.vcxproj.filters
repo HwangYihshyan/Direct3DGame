@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="01_App">
+      <UniqueIdentifier>{a1000000-0000-0000-0000-000000000010}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02_Scene">
+      <UniqueIdentifier>{a1000000-0000-0000-0000-000000000011}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03_Equipment">
+      <UniqueIdentifier>{a1000000-0000-0000-0000-000000000012}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04_Synergy">
+      <UniqueIdentifier>{a1000000-0000-0000-0000-000000000013}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05_Player">
+      <UniqueIdentifier>{a1000000-0000-0000-0000-000000000014}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="06_Gameplay">
+      <UniqueIdentifier>{a1000000-0000-0000-0000-000000000015}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07_Effect">
+      <UniqueIdentifier>{a1000000-0000-0000-0000-000000000016}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="08_UI">
+      <UniqueIdentifier>{a1000000-0000-0000-0000-000000000017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="09_Assets">
+      <UniqueIdentifier>{a1000000-0000-0000-0000-000000000018}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="10_System">
+      <UniqueIdentifier>{a1000000-0000-0000-0000-000000000019}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="11_Shader">
+      <UniqueIdentifier>{6bd676be-89fa-44f6-965c-53f1b3c3e6ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="09_Assets\texture">
+      <UniqueIdentifier>{0f5f8ea3-657a-484b-802d-4164e9df20af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="09_Assets\sound">
+      <UniqueIdentifier>{ce9142b3-d677-4469-a711-cf988b1dff6a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AudioManager.cpp">
+      <Filter>10_System</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>06_Gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonLevel.cpp">
+      <Filter>06_Gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigData.cpp">
+      <Filter>10_System</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlsScene.cpp">
+      <Filter>02_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="DropSystem.cpp">
+      <Filter>03_Equipment</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectSystem.cpp">
+      <Filter>07_Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>06_Gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemySpawner.cpp">
+      <Filter>06_Gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyStats.cpp">
+      <Filter>06_Gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="EquipmentDatabase.cpp">
+      <Filter>03_Equipment</Filter>
+    </ClCompile>
+    <ClCompile Include="EquipmentGenerator.cpp">
+      <Filter>03_Equipment</Filter>
+    </ClCompile>
+    <ClCompile Include="EquipmentTypes.cpp">
+      <Filter>03_Equipment</Filter>
+    </ClCompile>
+    <ClCompile Include="GameClearScene.cpp">
+      <Filter>02_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="GameOverScene.cpp">
+      <Filter>02_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>02_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="GameUI.cpp">
+      <Filter>08_UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventory.cpp">
+      <Filter>03_Equipment</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemInfoUI.cpp">
+      <Filter>08_UI</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelSelectScene.cpp">
+      <Filter>02_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="MythicEffect.cpp">
+      <Filter>04_Synergy</Filter>
+    </ClCompile>
+    <ClCompile Include="PauseUI.cpp">
+      <Filter>08_UI</Filter>
+    </ClCompile>
+    <ClCompile Include="PostEffect.cpp">
+      <Filter>01_App</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerCharacter.cpp">
+      <Filter>05_Player</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerLoadout.cpp">
+      <Filter>05_Player</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerSkill.cpp">
+      <Filter>05_Player</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerStats.cpp">
+      <Filter>05_Player</Filter>
+    </ClCompile>
+    <ClCompile Include="RandomOption.cpp">
+      <Filter>03_Equipment</Filter>
+    </ClCompile>
+    <ClCompile Include="Ranking.cpp">
+      <Filter>06_Gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="RankingScene.cpp">
+      <Filter>02_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Rarity.cpp">
+      <Filter>03_Equipment</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>10_System</Filter>
+    </ClCompile>
+    <ClCompile Include="ResultScene.cpp">
+      <Filter>02_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>02_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="ScoreDisplay.cpp">
+      <Filter>08_UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ShowScore.cpp">
+      <Filter>06_Gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="StageMaps.cpp">
+      <Filter>06_Gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="StageObjective.cpp">
+      <Filter>06_Gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="StartScene.cpp">
+      <Filter>02_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SynergySystem.cpp">
+      <Filter>04_Synergy</Filter>
+    </ClCompile>
+    <ClCompile Include="SynergyUI.cpp">
+      <Filter>08_UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UIRenderer.cpp">
+      <Filter>08_UI</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>01_App</Filter>
+    </ClCompile>
+    <ClCompile Include="option.cpp">
+      <Filter>02_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="TerrainTileBottom.cpp">
+      <Filter>09_Assets\texture</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ArmorData.h">
+      <Filter>03_Equipment</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>06_Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonLevel.h">
+      <Filter>06_Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioManager.h">
+      <Filter>10_System</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigData.h">
+      <Filter>10_System</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlsScene.h">
+      <Filter>02_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="DropSystem.h">
+      <Filter>03_Equipment</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectSystem.h">
+      <Filter>07_Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>06_Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemySpawner.h">
+      <Filter>06_Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyStats.h">
+      <Filter>06_Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="EquipmentDatabase.h">
+      <Filter>03_Equipment</Filter>
+    </ClInclude>
+    <ClInclude Include="EquipmentGenerator.h">
+      <Filter>03_Equipment</Filter>
+    </ClInclude>
+    <ClInclude Include="EquipmentTypes.h">
+      <Filter>03_Equipment</Filter>
+    </ClInclude>
+    <ClInclude Include="GameClearScene.h">
+      <Filter>02_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="GameOverScene.h">
+      <Filter>02_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScene.h">
+      <Filter>02_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="GameUI.h">
+      <Filter>08_UI</Filter>
+    </ClInclude>
+    <ClInclude Include="InputTracker.h">
+      <Filter>06_Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventory.h">
+      <Filter>03_Equipment</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemInfoUI.h">
+      <Filter>08_UI</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelSelectScene.h">
+      <Filter>02_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="MapBase.h">
+      <Filter>06_Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="MythicEffect.h">
+      <Filter>04_Synergy</Filter>
+    </ClInclude>
+    <ClInclude Include="PauseUI.h">
+      <Filter>08_UI</Filter>
+    </ClInclude>
+    <ClInclude Include="PostEffect.h">
+      <Filter>01_App</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerCharacter.h">
+      <Filter>05_Player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerLoadout.h">
+      <Filter>05_Player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerSkill.h">
+      <Filter>05_Player</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerStats.h">
+      <Filter>05_Player</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomOption.h">
+      <Filter>03_Equipment</Filter>
+    </ClInclude>
+    <ClInclude Include="Ranking.h">
+      <Filter>06_Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="RankingScene.h">
+      <Filter>02_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Rarity.h">
+      <Filter>03_Equipment</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>10_System</Filter>
+    </ClInclude>
+    <ClInclude Include="ResultData.h">
+      <Filter>10_System</Filter>
+    </ClInclude>
+    <ClInclude Include="ResultScene.h">
+      <Filter>02_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>02_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoreDisplay.h">
+      <Filter>08_UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ShowScore.h">
+      <Filter>06_Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="StageMaps.h">
+      <Filter>06_Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="StageObjective.h">
+      <Filter>06_Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="StartScene.h">
+      <Filter>02_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SynergySystem.h">
+      <Filter>04_Synergy</Filter>
+    </ClInclude>
+    <ClInclude Include="SynergyUI.h">
+      <Filter>08_UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UIRenderer.h">
+      <Filter>08_UI</Filter>
+    </ClInclude>
+    <ClInclude Include="WeaponData.h">
+      <Filter>03_Equipment</Filter>
+    </ClInclude>
+    <ClInclude Include="option.h">
+      <Filter>02_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrainTileBottom.h">
+      <Filter>09_Assets\texture</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\texture\bg_forest_far.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+    <Image Include="Assets\texture\bg_forest_mid.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+    <Image Include="Assets\texture\bg_forest_near.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+    <Image Include="Assets\texture\bg_plain_far.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+    <Image Include="Assets\texture\bg_plain_mid.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+    <Image Include="Assets\texture\bg_plain_near.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+    <Image Include="Assets\texture\bg_suburb_far.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+    <Image Include="Assets\texture\bg_suburb_mid.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+    <Image Include="Assets\texture\bg_suburb_near.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+    <Image Include="Assets\texture\boss.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+    <Image Include="Assets\texture\bullets.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+    <Image Include="Assets\texture\chests.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+    <Image Include="Assets\texture\controls_bg.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+    <Image Include="Assets\texture\effects.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+    <Image Include="Assets\texture\enemies.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+    <Image Include="Assets\texture\Forest.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+    <Image Include="Assets\texture\gameclear_bg.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+    <Image Include="Assets\texture\gameover_bg.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+    <Image Include="Assets\texture\health_pickup.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+    <Image Include="Assets\texture\items.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+    <Image Include="Assets\texture\Plain.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+    <Image Include="Assets\texture\player_sheet.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+    <Image Include="Assets\texture\player2_sheet.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+    <Image Include="Assets\texture\skill_icons.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+    <Image Include="Assets\texture\stat_icons.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+    <Image Include="Assets\texture\Surberb.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+    <Image Include="Assets\texture\synergy_icons.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+    <Image Include="Assets\texture\terrain_forest.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+    <Image Include="Assets\texture\terrain_plain.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+    <Image Include="Assets\texture\terrain_suburb.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+    <Image Include="Assets\texture\title_bg.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+    <Image Include="Assets\texture\title_far.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+    <Image Include="Assets\texture\title_mid.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+    <Image Include="Assets\texture\title_near.png">
+      <Filter>09_Assets\texture</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\sound\bgm_gameover.mp3">
+      <Filter>09_Assets</Filter>
+    </None>
+    <None Include="Assets\sound\bgm_result.mp3">
+      <Filter>09_Assets</Filter>
+    </None>
+    <None Include="Assets\sound\bgm_stage1.mp3">
+      <Filter>09_Assets</Filter>
+    </None>
+    <None Include="Assets\sound\bgm_stage2.mp3">
+      <Filter>09_Assets</Filter>
+    </None>
+    <None Include="Assets\sound\bgm_stage3.mp3">
+      <Filter>09_Assets</Filter>
+    </None>
+    <None Include="Assets\sound\bgm_stageclear.mp3">
+      <Filter>09_Assets</Filter>
+    </None>
+    <None Include="Assets\sound\bgm_title.mp3">
+      <Filter>09_Assets</Filter>
+    </None>
+    <None Include="Assets\sound\se_break.mp3">
+      <Filter>09_Assets</Filter>
+    </None>
+    <None Include="Assets\sound\se_chest.mp3">
+      <Filter>09_Assets</Filter>
+    </None>
+    <None Include="Assets\sound\se_dash.mp3">
+      <Filter>09_Assets</Filter>
+    </None>
+    <None Include="Assets\sound\se_enemy_hit.mp3">
+      <Filter>09_Assets</Filter>
+    </None>
+    <None Include="Assets\sound\se_headshot.mp3">
+      <Filter>09_Assets</Filter>
+    </None>
+    <None Include="Assets\sound\se_heal.mp3">
+      <Filter>09_Assets</Filter>
+    </None>
+    <None Include="Assets\sound\se_menu_back.mp3">
+      <Filter>09_Assets</Filter>
+    </None>
+    <None Include="Assets\sound\se_menu_decide.mp3">
+      <Filter>09_Assets</Filter>
+    </None>
+    <None Include="Assets\sound\se_menu_move.mp3">
+      <Filter>09_Assets</Filter>
+    </None>
+    <None Include="Assets\sound\se_scene_change.mp3">
+      <Filter>09_Assets</Filter>
+    </None>
+    <None Include="Assets\sound\se_shot.mp3">
+      <Filter>09_Assets</Filter>
+    </None>
+    <None Include="Assets\sound\se_skill_assault.mp3">
+      <Filter>09_Assets</Filter>
+    </None>
+    <None Include="Assets\sound\se_skill_assault_l.mp3">
+      <Filter>09_Assets</Filter>
+    </None>
+    <None Include="Assets\sound\se_skill_heavy.mp3">
+      <Filter>09_Assets</Filter>
+    </None>
+    <None Include="Assets\sound\se_skill_heavy_l.mp3">
+      <Filter>09_Assets</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Shaders\ScreenPS.hlsl">
+      <Filter>11_Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Shaders\ScreenVS.hlsl">
+      <Filter>11_Shader</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

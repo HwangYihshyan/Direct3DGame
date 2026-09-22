@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{71d2561a-3ebe-4fcc-8e51-725aaf42618a}</ProjectGuid>
+    <RootNamespace>BulletDraft</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Release'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <!--
+    ============================================================
+    共通設定
+    4つの構成すべてで同じライブラリをリンクする。
+    元のプロジェクトは Debug|x64 にしかライブラリ指定が無く、
+    Release ではリンクできない状態だったため統一している。
+    ============================================================
+  -->
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <!-- ウィンドウアプリなので必ず Windows サブシステム -->
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;dxgi.lib;d2d1.lib;dwrite.lib;windowscodecs.lib;winmm.lib;ole32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Manifest>
+      <EnableSegmentHeap>true</EnableSegmentHeap>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
+    <ClCompile>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AudioManager.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="CommonLevel.cpp" />
+    <ClCompile Include="ConfigData.cpp" />
+    <ClCompile Include="ControlsScene.cpp" />
+    <ClCompile Include="DropSystem.cpp" />
+    <ClCompile Include="EffectSystem.cpp" />
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="EnemySpawner.cpp" />
+    <ClCompile Include="EnemyStats.cpp" />
+    <ClCompile Include="EquipmentDatabase.cpp" />
+    <ClCompile Include="EquipmentGenerator.cpp" />
+    <ClCompile Include="EquipmentTypes.cpp" />
+    <ClCompile Include="GameClearScene.cpp" />
+    <ClCompile Include="GameOverScene.cpp" />
+    <ClCompile Include="GameScene.cpp" />
+    <ClCompile Include="GameUI.cpp" />
+    <ClCompile Include="Inventory.cpp" />
+    <ClCompile Include="ItemInfoUI.cpp" />
+    <ClCompile Include="LevelSelectScene.cpp" />
+    <ClCompile Include="MythicEffect.cpp" />
+    <ClCompile Include="PauseUI.cpp" />
+    <ClCompile Include="PlayerCharacter.cpp" />
+    <ClCompile Include="PostEffect.cpp" />
+    <ClCompile Include="PlayerLoadout.cpp" />
+    <ClCompile Include="PlayerSkill.cpp" />
+    <ClCompile Include="PlayerStats.cpp" />
+    <ClCompile Include="RandomOption.cpp" />
+    <ClCompile Include="Ranking.cpp" />
+    <ClCompile Include="RankingScene.cpp" />
+    <ClCompile Include="Rarity.cpp" />
+    <ClCompile Include="ResourceManager.cpp" />
+    <ClCompile Include="ResultScene.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="ScoreDisplay.cpp" />
+    <ClCompile Include="ShowScore.cpp" />
+    <ClCompile Include="StageMaps.cpp" />
+    <ClCompile Include="TerrainTileBottom.cpp" />
+    <ClCompile Include="StageObjective.cpp" />
+    <ClCompile Include="StartScene.cpp" />
+    <ClCompile Include="SynergySystem.cpp" />
+    <ClCompile Include="SynergyUI.cpp" />
+    <ClCompile Include="UIRenderer.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="option.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ArmorData.h" />
+    <ClInclude Include="AudioManager.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="CommonLevel.h" />
+    <ClInclude Include="ConfigData.h" />
+    <ClInclude Include="ControlsScene.h" />
+    <ClInclude Include="DropSystem.h" />
+    <ClInclude Include="EffectSystem.h" />
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="EnemySpawner.h" />
+    <ClInclude Include="EnemyStats.h" />
+    <ClInclude Include="EquipmentDatabase.h" />
+    <ClInclude Include="EquipmentGenerator.h" />
+    <ClInclude Include="EquipmentTypes.h" />
+    <ClInclude Include="GameClearScene.h" />
+    <ClInclude Include="GameOverScene.h" />
+    <ClInclude Include="GameScene.h" />
+    <ClInclude Include="GameUI.h" />
+    <ClInclude Include="InputTracker.h" />
+    <ClInclude Include="Inventory.h" />
+    <ClInclude Include="ItemInfoUI.h" />
+    <ClInclude Include="LevelSelectScene.h" />
+    <ClInclude Include="MapBase.h" />
+    <ClInclude Include="MythicEffect.h" />
+    <ClInclude Include="PauseUI.h" />
+    <ClInclude Include="PlayerCharacter.h" />
+    <ClInclude Include="PostEffect.h" />
+    <ClInclude Include="PlayerLoadout.h" />
+    <ClInclude Include="PlayerSkill.h" />
+    <ClInclude Include="PlayerStats.h" />
+    <ClInclude Include="RandomOption.h" />
+    <ClInclude Include="Ranking.h" />
+    <ClInclude Include="RankingScene.h" />
+    <ClInclude Include="Rarity.h" />
+    <ClInclude Include="ResourceManager.h" />
+    <ClInclude Include="ResultData.h" />
+    <ClInclude Include="ResultScene.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="ScoreDisplay.h" />
+    <ClInclude Include="ShowScore.h" />
+    <ClInclude Include="StageMaps.h" />
+    <ClInclude Include="StageObjective.h" />
+    <ClInclude Include="TerrainTileBottom.h" />
+    <ClInclude Include="StartScene.h" />
+    <ClInclude Include="SynergySystem.h" />
+    <ClInclude Include="SynergyUI.h" />
+    <ClInclude Include="UIRenderer.h" />
+    <ClInclude Include="WeaponData.h" />
+    <ClInclude Include="option.h" />
+  </ItemGroup>
+  <!--
+    ============================================================
+    シェーダ
+      fxc がビルド時にコンパイルし、
+      $(OutDir)Shaders\ 以下へ .cso を書き出す。
+      実行時は PostEffect が "Shaders\*.cso" を読む。
+    ============================================================
+  -->
+  <ItemGroup>
+    <FxCompile Include="Shaders\ScreenVS.hlsl">
+      <ShaderType>Vertex</ShaderType>
+      <ShaderModel>5.0</ShaderModel>
+      <EntryPointName>main</EntryPointName>
+      <ObjectFileOutput>$(OutDir)Shaders\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="Shaders\ScreenPS.hlsl">
+      <ShaderType>Pixel</ShaderType>
+      <ShaderModel>5.0</ShaderModel>
+      <EntryPointName>main</EntryPointName>
+      <ObjectFileOutput>$(OutDir)Shaders\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\sound\bgm_title.mp3" />
+    <None Include="Assets\sound\bgm_stage1.mp3" />
+    <None Include="Assets\sound\bgm_stage2.mp3" />
+    <None Include="Assets\sound\bgm_stage3.mp3" />
+    <None Include="Assets\sound\bgm_result.mp3" />
+    <None Include="Assets\sound\bgm_gameover.mp3" />
+    <None Include="Assets\sound\bgm_stageclear.mp3" />
+    <None Include="Assets\sound\se_shot.mp3" />
+    <None Include="Assets\sound\se_heal.mp3" />
+    <None Include="Assets\sound\se_break.mp3" />
+    <None Include="Assets\sound\se_chest.mp3" />
+    <None Include="Assets\sound\se_menu_move.mp3" />
+    <None Include="Assets\sound\se_skill_assault_l.mp3" />
+    <None Include="Assets\sound\se_skill_heavy_l.mp3" />
+    <None Include="Assets\sound\se_headshot.mp3" />
+    <None Include="Assets\sound\se_dash.mp3" />
+    <None Include="Assets\sound\se_enemy_hit.mp3" />
+    <None Include="Assets\sound\se_skill_assault.mp3" />
+    <None Include="Assets\sound\se_skill_heavy.mp3" />
+    <None Include="Assets\sound\se_menu_decide.mp3" />
+    <None Include="Assets\sound\se_menu_back.mp3" />
+    <None Include="Assets\sound\se_scene_change.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\texture\Forest.png" />
+    <Image Include="Assets\texture\Plain.png" />
+    <Image Include="Assets\texture\Surberb.png" />
+    <Image Include="Assets\texture\bg_forest_far.png" />
+    <Image Include="Assets\texture\bg_forest_mid.png" />
+    <Image Include="Assets\texture\bg_forest_near.png" />
+    <Image Include="Assets\texture\bg_plain_far.png" />
+    <Image Include="Assets\texture\bg_plain_mid.png" />
+    <Image Include="Assets\texture\bg_plain_near.png" />
+    <Image Include="Assets\texture\bg_suburb_far.png" />
+    <Image Include="Assets\texture\bg_suburb_mid.png" />
+    <Image Include="Assets\texture\bg_suburb_near.png" />
+    <Image Include="Assets\texture\boss.png" />
+    <Image Include="Assets\texture\bullets.png" />
+    <Image Include="Assets\texture\chests.png" />
+    <Image Include="Assets\texture\controls_bg.png" />
+    <Image Include="Assets\texture\effects.png" />
+    <Image Include="Assets\texture\enemies.png" />
+    <Image Include="Assets\texture\gameclear_bg.png" />
+    <Image Include="Assets\texture\gameover_bg.png" />
+    <Image Include="Assets\texture\health_pickup.png" />
+    <Image Include="Assets\texture\items.png" />
+    <Image Include="Assets\texture\player2_sheet.png" />
+    <Image Include="Assets\texture\player_sheet.png" />
+    <Image Include="Assets\texture\skill_icons.png" />
+    <Image Include="Assets\texture\stat_icons.png" />
+    <Image Include="Assets\texture\synergy_icons.png" />
+    <Image Include="Assets\texture\terrain_forest.png" />
+    <Image Include="Assets\texture\terrain_plain.png" />
+    <Image Include="Assets\texture\terrain_suburb.png" />
+    <Image Include="Assets\texture\title_bg.png" />
+    <Image Include="Assets\texture\title_far.png" />
+    <Image Include="Assets\texture\title_mid.png" />
+    <Image Include="Assets\texture\title_near.png" />
+  </ItemGroup>
+  <!--
+    ============================================================
+    Assets を出力フォルダへコピーする。
+    GameScene が "Assets\texture\forest.png" を相対パスで開くため、
+    exe と同じ場所に Assets が無いと起動に失敗する。
+    ============================================================
+  -->
+  <Target Name="CopyGameAssets" AfterTargets="Build">
+    <ItemGroup>
+      <GameAssets Include="$(ProjectDir)Assets\**\*.*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(GameAssets)" DestinationFiles="@(GameAssets->'$(OutDir)Assets\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+  </Target>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

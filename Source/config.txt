@@ -1,0 +1,6 @@
+master=70
+bgm=80
+se=60
+fullscreen=0
+width=1280
+height=720

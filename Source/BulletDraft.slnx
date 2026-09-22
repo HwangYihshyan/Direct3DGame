@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="BulletDraft.vcxproj" Id="71d2561a-3ebe-4fcc-8e51-725aaf42618a" />
+</Solution>
